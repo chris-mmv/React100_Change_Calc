@@ -1,0 +1,29 @@
+/* body {
+  background: linear-gradient(154deg, #eb8500ad, #4653c5d0, #eb8500ad) center
+    center / cover no-repeat fixed;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} */
+
+.bg-layer {
+  position: fixed;
+  inset: -5%; /* allows movement without edges showing */
+  z-index: -1;
+
+  background-image: url("assets/money.jpg");
+  background-size: cover;
+  background-position: center;
+
+  will-change: transform;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.app-content {
+  position: relative;
+  z-index: 1;
+}
+
+.modal-offset {
+  margin-top: 6rem; /* pushes modal below header */
+}
