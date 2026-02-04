@@ -315,7 +315,7 @@ function App() {
                               const cardClass =
                                 count === 0
                                   ? "bg-danger-subtle"
-                                  : "border-success";
+                                  : "bg-success-subtle";
 
                               return (
                                 <div className="col-6 col-md-3" key={d.key}>
